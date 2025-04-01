@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/washingbooking",
+            "outputPath": "dist/washing-booking",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -102,7 +102,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/JeppeGivskud/WashingBooking.git"
+          }
         }
       }
     }
