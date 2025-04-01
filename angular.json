@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/washing-booking",
+            "outputPath": "dist/washingbooking",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -100,8 +100,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e1451d21-9ec9-4ce6-b257-7708d27eb7a6"
   }
 }
